@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(160deg,#2c61ff,#fb27b1);
+}
+
+.convertor-container{
+    background: #ffffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    padding:24px 30px;
+    text-align: center;
+}
+.convertor-container h1{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+.convertor-container .input-container{
+    border: 2px solid #bbbbbd;
+    border-radius: 5px;
+    margin-block: 20px;
+}
+
+.convertor-container .input-container:focus-within{
+    border-color: #1a1aa8;
+}
+
+
+.convertor-container .input-container input,
+.convertor-container .input-container select{
+    width: 150px;
+    outline:none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.convertor-container .arrow{
+    font-size:50px;
+}
+
+.convertor-container .result{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:440px){
+    .convertor-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .convertor-container h1{
+        font-size: 20px;
+    }
+
+    .convertor-container .input-container{
+        border:none;
+    }
+
+    .convertor-container .input-container input,
+    .convertor-container .input-container select{
+        border: 1px solid #ccc;
+        margin-block: 4px;
+        width: 100%;
+
+    }
+}
